@@ -1,0 +1,113 @@
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #4e71e4, #7222d3);
+            min-height: 100vh;
+        }
+        #maindiv{
+            margin: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+        #todo{
+            background-color: black;
+            padding: 20px 70px;
+            border-radius: 5px;
+            border: 0 solid;
+            position: relative;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        label{
+            font-size: 20px;
+            color: white;   
+        }
+        input,button{
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-size: 20px;
+        }
+        input[type="text"]:placeholder-shown{
+            font-size: 20px;
+        }
+        button{
+            background-color: rgba(153, 86, 216, 0.623);
+            color: aliceblue;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: not-allowed;
+        }
+        #clearbtn{
+            margin-left: 95px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin: 5px 0;
+            background-color: #f2f2fc;
+            border-radius: 6px;
+            position: relative;
+            font-size: 16px;
+        }
+        .spandat{
+            position: absolute;
+            right: 100px;
+            color: gray;
+        }
+        .delete {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        li:hover .delete {
+            opacity: 1;
+        }
+        #dn{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            justify-content: right;
+            right: 10px;
+            border: 0;
+            padding: 0;
+        }
+        #logout{
+            border: 0;
+            position: absolute;
+            left: 10px;
+            top: 0px;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+        }
+        #content-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #welcome {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: black; 
+        }
